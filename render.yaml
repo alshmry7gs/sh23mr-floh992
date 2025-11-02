@@ -1,18 +1,1 @@
-services:
-  - type: web
-    name: discord-gemini-bot
-    env: node
-    region: oregon
-    plan: free
-    buildCommand: npm install
-    startCommand: node index.js
-    healthCheckPath: /health
-    envVars:
-      - key: DISCORD_TOKEN
-        sync: false
-      - key: GEMINI_API_KEY
-        sync: false
-      - key: NODE_ENV
-        value: production
-      - key: PORT
-        value: 10000
+
